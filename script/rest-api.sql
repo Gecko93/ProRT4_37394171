@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-08-2024 a las 15:42:12
+-- Tiempo de generación: 27-08-2024 a las 16:30:02
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -41,7 +41,9 @@ CREATE TABLE `libros` (
 --
 
 INSERT INTO `libros` (`id`, `nombre`, `autor`, `categoria`, `anio_publicacion`, `ISBN`) VALUES
-(1, 'Alice In Wonderland', 'Lewis Carroll', 'Fantasia', '2019-04-15', '9788499520324');
+(1, 'Alice In Wonderland', 'Lewis Carroll', 'Fantasia', '2019-04-15', '9788499520324'),
+(2, 'Veinte Leguas', 'Julio Verne', 'fantasia', '2019-06-04', '9788468234687'),
+(3, 'Frankenstein', 'Mary Shelley', 'terror', '2015-10-06', '9788467043662');
 
 --
 -- Índices para tablas volcadas
@@ -61,7 +63,7 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `libros`
 --
 ALTER TABLE `libros`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
